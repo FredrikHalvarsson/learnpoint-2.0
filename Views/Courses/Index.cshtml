@@ -1,0 +1,37 @@
+﻿@model IEnumerable<learnpoint_2._0.Models.Course>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Courses</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="col-sm-10">
+                <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@item.CourseId">
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </a>
+            </td>
+            <td class=" col-sm-2">
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.CourseId">Edit</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.CourseId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
