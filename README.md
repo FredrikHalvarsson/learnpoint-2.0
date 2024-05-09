@@ -10,5 +10,8 @@
 - [x]  Uppdatera en elevs lärare i “programmering1” från Reidar till Tobias.
 >      Gå till Teacher Courses, klicka på edit och byt lärare
 
+#### Det går även att klicka på "details" i "Students" får att sen en elevs alla kurser, betyg och vilken lärare som satt betyget 
+
+
 ## ER Diagram:
 ![Learnpoint 2_0](https://github.com/FredrikHalvarsson/learnpoint-2.0/assets/144245906/4827fb78-6b09-457c-831e-f046d4f1ac08)
